@@ -5,7 +5,9 @@ using namespace std;
 
 int func(string surname, int variants) {
     int a = 0;
-    for (int i = 0; i < surname.length(); i++) a += surname[i];
+    for (int i = 0; i < surname.length(); i++) {
+        a += surname[i];
+    }
     return a % variants;
 }
 
